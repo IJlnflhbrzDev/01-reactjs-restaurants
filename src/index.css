@@ -1,13 +1,598 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+html , body {
+   overflow-x:  hidden !important;
+}
+.carousel {
+  position: relative;
+  width: 100%;
+}
+.carousel .carousel-inner .carousel-item::before {
+  content: '';
+  background-color: rgba(12, 11, 10, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.carousel .carousel-inner .carousel-item .carousel-caption {
+  position: absolute;
+  top: 35vh;
+  z-index: 9999;
+}
+
+.carousel .carousel-inner .carousel-item .carousel-caption h3 {
+  font-size: 50px !important;
+  font-weight: 700;
+  text-align: center;
+  line-height: 57.6px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.carousel .carousel-inner .carousel-item .carousel-caption p {
+  font-size: 16px;
+  font-weight: 500;
+}
+.carousel-control-prev-icon , .carousel-control-next-icon {
+  display: none;
+  visibility: hidden;
+
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  display: none !important;
+}
+
+.carousel #buttonCarousel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+  position: absolute;
+  top: 60%;
+  left: 24%;
+  z-index: 999;
+}
+
+.carousel #buttonCarousel button {
+  padding: 6px 17px 6px 17px;
+  margin-left: 10px;
+  color: white;
+  text-transform: uppercase;
+  border: 2px solid #ffb03b;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 14px;
+  background-color: transparent;
+}
+
+.carousel #buttonCarousel button:hover {
+  background-color: #ffb03b;
+}
+
+#mobile-caption {
+  display: none;
+}
+
+@media (max-width: 550px) {
+  #buttonCarousel {
+    top: 59% !important;
+    left: 25% !important;
+  }
+  #buttonCarousel button {
+    border-radius: 1px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  #mobile-caption {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: absolute;
+    top: 40%;
+    text-align: center;
+    left: 16%;
+    color: white;
+    width: 70%;
+  }
+  #mobile-caption h3 {
+    font-family: 'Satisfy', cursive;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 57.6px;
+    margin-bottom: 10px;
+  }
+  #mobile-caption h3 span {
+    color: #ffb03b;
+  }
+}
+
+section {
+  overflow: hidden;
+}
+
+section img {
+  border: 0;
+  width: 100%;
+  margin-bottom: 30px !important;
+  background-color: #fbe9e7 !important;
+}
+
+section #content-description h3 {
+  letter-spacing: 1px;
+  font-weight: bolder;
+}
+
+section #content-description p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #848484;
+}
+
+section ul {
+  margin: 0 !important;
+  padding: 0;
+}
+
+section ul li {
+  list-style: none;
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.contentWhyCose h2 {
+  font-weight: 700;
+}
+
+.contentWhyCose p {
+  width: 50%;
+  margin: 15px auto 0 auto;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.content-card {
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+  padding: 50px 30px;
+  -webkit-box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.content-card:hover {
+  background-color: #ffb03b;
+  padding: 30px 30px 70px 30px;
+  -webkit-box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
+          box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
+}
+
+.content-card:hover h4, .content-card:hover span, .content-card:hover small {
+  color: white;
+}
+
+.content-card h4 {
+  font-size: 25px !important;
+  color: #6c665c;
+  font-weight: 700;
+}
+
+.content-card span {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+  color: #ffcf88;
+}
+
+.content-card small {
+  font-size: 14px;
+  color: #aaaaaa;
+  font-weight: 600;
+}
+
+#MenuCheckOut {
+  margin-top: 100px;
+}
+
+#MenuCheckOut .check-menu h2 {
+  font-weight: 700;
+}
+
+#MenuCheckOut .check-menu h2 span {
+  color: #ffb03b;
+}
+
+#MenuCheckOut button {
+  border: 0;
+  outline: none;
+  background-color: transparent;
+  color: #ff9b08;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+#MenuCheckOut button::after {
+  content: '  -----------------';
+  color: #dad8d4;
+  font-weight: normal;
+}
+
+#MenuCheckOut small {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#heroCheckOut {
+  position: relative;
+}
+
+#heroCheckOut img {
+  position: absolute;
+  display: block;
+  left: 43%;
+  top: -210px;
+  width: 13%;
+}
+
+@media (max-width: 992px) {
+  #GalleryRestaurants {
+    color: white;
+    background-color: crimson;
+  }
+  .GalleryRestaurants_contents p{
+    color: thistle !important;
+    font-style: italic;
+  }
+  #GalleryRestaurants a img  {
+    
+    /* padding: 100px; */
+   margin-bottom: 10px !important;
+   border-radius: 20px;
+  }
+  #heroCheckOut {
+    visibility: hidden;
+  }
+
+  .Image_Cheff img {
+      height: 500px;
+  }
+}
+
+@media (max-width: 440px) {
+  button { 
+    display: none !important; 
+    visibility: hidden !important;
+  }
+  #MenuCheckOut {
+    display: none;
+  }
+}
+
+#CheckOutMenuSpecials {
+  text-align: center;
+  margin-top: 80px;
+}
+
+#CheckOutMenuSpecials #CheckOutMenuSpecials h2 {
+  font-weight: bold;
+}
+
+#CheckOutMenuSpecials #CheckOutMenuSpecials h2 span {
+  font-family: sans-serif !important;
+  color: #ffb03b !important;
+}
+
+#CheckOutMenuSpecials #CheckOutMenuSpecials p {
+  width: 50%;
+  margin: 15px auto 0 auto;
+}
+
+#CheckOutMenuSpecials .tab-content h3 {
+  font-weight: bold;
+}
+
+#CheckOutMenuSpecials .tab-content img {
+  display: block;
+  width: 30%;
+}
+
+#CheckOutMenuSpecials .tab-content p {
+  color: #777777;
+  font-style: italic;
+}
+
+@media (max-width: 992px) {
+  
+ #CheckOutMenuSpecials .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: reverse !important;
+        -ms-flex-direction: column-reverse !important;
+            flex-direction: column-reverse !important;
+  }
+  #HandlePesanan  {
+  display: block;
+
+
+  }
+}
+
+#event-carousel-restaurant {
+  background-image: url("https://bootstrapmade.com/demo/templates/Delicious/assets/img/events-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 90px;
+  background-attachment: fixed;
+}
+
+#event-carousel-restaurant h2 {
+  color: white;
+  font-style: italic;
+  font-weight: bold;
+}
+
+#event-carousel-restaurant h3 {
+  color: #ffb03b;
+}
+
+#event-carousel-restaurant .container {
+  background-color: rgba(68, 68, 68, 0.5);
+}
+
+#event-carousel-restaurant #img_before_events {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+          z-index: 9999;
+  background-color: whitesmoke;
+}
+
+#event-carousel-restaurant #img_before_events p {
+  font-size: 20px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+#event-carousel-restaurant #img_before_events p::after {
+  content: '';
+  border-bottom: 1px solid #ffb03b;
+}
+
+#event-carousel-restaurant .contents-carousel_Event {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#event-carousel-restaurant .contents-carousel_Event small {
+  display: block;
+  color: rgba(68, 68, 68, 0.5);
+  margin-bottom: 20px;
+}
+
+#event-carousel-restaurant .contents-carousel_Event ul {
+  margin: 0 !important;
+  padding: 0;
+}
+
+#event-carousel-restaurant .contents-carousel_Event ul li {
+  list-style-type: none;
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 993px) {
+  .custom_Rows {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: reverse !important;
+        -ms-flex-direction: row-reverse !important;
+            flex-direction: row-reverse !important;
+  }
+}
+
+#GalleryRestaurants {
+  overflow: hidden;
+}
+
+#GalleryRestaurants img {
+  border: none !important;
+  width: 100%;
+  margin: 0 !important;
+}
+
+#GalleryRestaurants .GalleryRestaurants_contents {
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+
+#GalleryRestaurants .GalleryRestaurants_contents p {
+  width: 50%;
+  margin: 10px auto 0 auto;
+  color: #444444;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+#GalleryRestaurants a {
+  text-decoration: none;
+}
+
+#GalleryRestaurants a img {
+  width: 100%;
+  height: auto;
+  -webkit-transition: all ease-in-out 0.4s;
+  transition: all ease-in-out 0.4s;
+}
+
+#GalleryRestaurants a img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+#OurProffesional_Chef {
+  background-image: url("https://images.pexels.com/photos/2403392/pexels-photo-2403392.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-attachment: fixed;
+  background-position: 40px -10px;
+  background-size: cover;
+}
+
+#OurProffesional_Chef .OurProffesionalChef_conten {
+  margin-top: 40px;
+  color: white;
+  text-align: center;
+}
+
+#OurProffesional_Chef .OurProffesionalChef_conten p {
+  font-weight: 500;
+  width: 50%;
+  margin: 10px auto 0 auto;
+}
+
+#OurProffesional_Chef .my_cheft {
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+}
+
+#OurProffesional_Chef .my_cheft:hover .card_titles {
+  visibility: visible;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+#OurProffesional_Chef .my_cheft img {
+  display: block;
+  width: 100%;
+}
+
+#OurProffesional_Chef .my_cheft .card_titles {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: all 1s ease-in;
+  transition: all 1s ease-in;
+  visibility: hidden;
+  width: 80%;
+  background-color: white;
+  position: absolute;
+  left: 10%;
+  top: 70%;
+}
+
+#OurProffesional_Chef .my_cheft .card_titles h4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-weight: 500;
+  font-size: 16px !important;
+  color: #6c665c;
+  font-family: sans-serif;
+}
+
+#OurProffesional_Chef .my_cheft .card_titles h4::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 2px;
+  background: #ffcf88;
+  left: calc(50% - 25px);
+  top: 50%;
+}
+
+#OurProffesional_Chef .my_cheft .card_titles svg {
+  cursor: pointer;
+  font-weight: bold;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#OurProffesional_Chef .my_cheft .card_titles svg:hover {
+  color: gold;
+}
+
+#OurProffesional_Chef .icon-cheft {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 50%;
+  margin: 10px auto 0 auto;
+}
+
+#OurProffesional_Chef .icon-cheft i:hover {
+  color: #ffcf88;
+}
+
+#contac_us {
+  text-align: center;
+  margin-top: 30px;
+}
+
+#contac_us .contac_us_title p {
+  width: 30%;
+  font-weight: 400;
+  font-size: 16px;
+  margin: 10px auto 0 auto;
+  margin-bottom: 30px;
+}
+
+#contac_us .info_title p {
+  margin-left: 15px;
+  color: grey;
+}
+
+#contac_us input {
+  margin-bottom: 30px;
+}
+
+h2, h3, h4, span {
+  font-family: 'Satisfy', cursive;
+  font-size: 32px !important;
 }
