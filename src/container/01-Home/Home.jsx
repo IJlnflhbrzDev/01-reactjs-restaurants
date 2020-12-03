@@ -20,7 +20,7 @@ import CheckOutSpecial from '../../component/CheckOutSpecial/CheckOutSpecial'
 import EventRestaurant from '../../component/EventRestaurants/EventRestaurant';
 import Gallery from '../../component/GalleryRestaurants/Gallery';
 import OurProffesionalChefs from '../../component/OurCheffRestaurant/OurProffesionalChefs';
-// import ContactDeveloper from '../../component/ContactDeveloper/ContactDeveloper'
+import ContactDeveloper from '../../component/ContactDeveloper/ContactDeveloper'
 import Footers from '../../component/Footer/Footers';
 
 
@@ -78,7 +78,7 @@ export default class Home extends Component {
         <EventRestaurant />
         <Gallery />
         <OurProffesionalChefs />
-        {/* <ContactDeveloper /> */}
+        <ContactDeveloper />
         <Footers />
       </Fragment>
     )

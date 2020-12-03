@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, Component } from 'react';
 import ReactDOM from 'react-dom';
 import Home from './container/01-Home/Home';
 import './index.css';

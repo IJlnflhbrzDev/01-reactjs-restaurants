@@ -27,7 +27,8 @@ class FormsMessage extends React.Component {
 
     this.setState({
       name: swal("Good Job!", 'Terimakasih Atas Komentarnya ' + this.state.YourName, "success")
-    })
+    });
+
     this.state.YourName = ''
   }
 
