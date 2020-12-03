@@ -2,6 +2,20 @@
 html , body {
    overflow-x:  hidden !important;
 }
+
+/* reactstrap nav  */
+.navbar {
+  background-color: rgb(255, 250, 243);
+  padding-top: .3rem;
+  padding-bottom: .3rem;
+}
+.navbar-toggler-icon { 
+  width: 20px !important;
+}
+.defaultColor { 
+  color  : #ffb03b;
+}
+/* reactstrap nav  */
 .carousel {
   position: relative;
   width: 100%;
@@ -19,7 +33,7 @@ html , body {
 .carousel .carousel-inner .carousel-item .carousel-caption {
   position: absolute;
   top: 35vh;
-  z-index: 9999;
+  z-index: 999;
 }
 
 .carousel .carousel-inner .carousel-item .carousel-caption h3 {
@@ -60,7 +74,7 @@ html , body {
   position: absolute;
   top: 60%;
   left: 24%;
-  z-index: 999;
+  z-index: 9999;
 }
 
 .carousel #buttonCarousel button {
@@ -181,6 +195,7 @@ section ul li {
 }
 
 .content-card:hover {
+  cursor: pointer;
   background-color: #ffb03b;
   padding: 30px 30px 70px 30px;
   -webkit-box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);

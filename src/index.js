@@ -1,15 +1,16 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import ReactDOM from 'react-dom';
 import Home from './container/01-Home/Home';
 import './index.css';
-// import App from './App';
-import reportWebVitals from './reportWebVitals';
+class Index extends Component {
+  render() {
+    return (
+      <Fragment>
+        <Home />
+      </Fragment>
+    )
+  }
+}
 
-ReactDOM.render(
-  <React.StrictMode>
-    <Home />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+ReactDOM.render(<Index />, document.getElementById('root'))
 
-reportWebVitals();
