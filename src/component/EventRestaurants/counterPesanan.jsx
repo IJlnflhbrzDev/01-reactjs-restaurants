@@ -40,12 +40,12 @@ export default class counterPesanan extends Component {
         </div>
         <hr />
         <div className="row text-center ">
-          <div className="col-md-6">
-            <button className="btn btn-outline-primary" onClick={this.handleButtonPesan}>Pesan Sekarang!</button>
+          <div className="col-md-6 col-sm-6 ">
+            <button className=" btn btn-outline-primary" onClick={this.handleButtonPesan}>Pesan Sekarang!</button>
           </div>
 
-          <div className="col-md-6">
-            {this.state.valueCheckout > 0 ? <button className="btn btn-outline-danger" onClick={this.handleButtonBatal}>Batal Pesanan!</button> : <button className="btn btn-outline-danger" disabled onClick={this.handleButtonBatal}>Batal Pesanan!</button>}
+          <div className="col-md-6 col-sm-6 ">
+            {this.state.valueCheckout > 0 ? <button className=" btn btn-outline-danger" onClick={this.handleButtonBatal}>Batal Pesanan!</button> : <button className=" btn btn-outline-danger" disabled onClick={this.handleButtonBatal}>Tidak Ada Pesanan!</button>}
           </div>
         </div>
       </Fragment>

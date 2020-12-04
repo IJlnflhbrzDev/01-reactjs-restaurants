@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react'
+import HandleButtonSuccess from '../HandleButtonSuccess/HandleButtonSuccess'
 import DetailSoto from './Soto.jpg'
 export default function Soto() {
   return (
@@ -16,7 +17,7 @@ export default function Soto() {
             The 4 Rivers Soto Sauce Variety Pack includes three 16 fl. oz. bottles of each 4 RiversSmokehouse BBQ sauces. The variety pack includes 1 4R Signature BBQ Sauce, 1 Hot BBQ Sauce, and 1 Mustard Sauce. Buy it now on Amazon!
               </p>
           <br />
-          <a href="/" className="btn btn-outline-danger">Buy Now!</a>
+          <HandleButtonSuccess CheckOut="Soto Jaman Now" />
         </div>
       </div>
       <hr />

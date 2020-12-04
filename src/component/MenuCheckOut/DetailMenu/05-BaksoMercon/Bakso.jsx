@@ -1,6 +1,9 @@
 import React, { Fragment } from 'react'
+import HandleButtonSuccess from '../HandleButtonSuccess/HandleButtonSuccess'
 import DetailBaksoMercon from './Bakso.jpg'
 export default function Bakso() {
+
+
   return (
     <Fragment>
       <div className="row mt-5 shadow">
@@ -16,7 +19,7 @@ export default function Bakso() {
             The 4 Rivers Bakso Mercon   Sauce Variety Pack includes three 16 fl. oz. bottles of each 4 RiversSmokehouse BBQ sauces. The variety pack includes 1 4R Signature BBQ Sauce, 1 Hot BBQ Sauce, and 1 Mustard Sauce. Buy it now on Amazon!
               </p>
           <br />
-          <a href="/" className="btn btn-outline-danger">Buy Now!</a>
+          <HandleButtonSuccess CheckOut="Bakso Mercon" />
         </div>
       </div>
       <hr />

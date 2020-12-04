@@ -4,14 +4,7 @@ html , body {
 }
 
 /* reactstrap nav  */
-.navbar {
-  background-color: rgb(255, 250, 243);
-  padding-top: .3rem;
-  padding-bottom: .3rem;
-}
-.navbar-toggler-icon { 
-  width: 20px !important;
-}
+
 .defaultColor { 
   color  : #ffb03b;
 }
