@@ -1,9 +1,11 @@
 import React, { Fragment } from 'react'
-import swal from 'sweetalert';
+import swal from 'sweetalert'
 import { FaMapMarkerAlt } from 'react-icons/fa'
 import { GiClockwork } from 'react-icons/gi'
 import { MdEmail } from 'react-icons/md'
 import { BiPhoneCall } from 'react-icons/bi'
+
+import IntegrateMaps from './IntegrateMaps';
 
 class FormsMessage extends React.Component {
   constructor() {
@@ -61,15 +63,7 @@ class FormsMessage extends React.Component {
 
 
 
-class GoggleMaps extends React.Component {
-  render() {
-    return (
-      <div className="ratio ratio-16x9">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d495.7494362966018!2d107.08741915055218!3d-6.264322051988553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698f9325bf1061%3A0x27cdbdd58bcac8d4!2sJl.%20Nona%20Merah%2C%20Bekasi%2C%20Jawa%20Barat!5e0!3m2!1sid!2sid!4v1606298590869!5m2!1sid!2sid" allowFullScreen title="Location"></iframe>
-      </div>
-    )
-  }
-}
+
 
 
 
@@ -85,7 +79,7 @@ export default function ContactDeveloper() {
       </div>
 
       <div className="contac_us_maps">
-        <GoggleMaps />
+        <IntegrateMaps />
       </div>
 
       <div className="container">
